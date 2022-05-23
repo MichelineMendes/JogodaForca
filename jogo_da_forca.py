@@ -223,6 +223,13 @@ while (jogar == 1):
         print("Erradas= ", end=" ")
         print(*letras_erradas, sep=",")
 
+        if categoria == "A":
+            print("Categoria escolhida: FRUTA")
+        elif categoria == "B":
+            print("Categoria escolhida: MODELOS DE CARROS")
+        else:
+            print("Categoria escolhida: CIDADES DA PARAÍBA")
+
         letra: str = input("\nDigite uma letra: ").upper()
         if len(letra) >= 2:
             print("Só é permitido uma letra de cada vez.")
